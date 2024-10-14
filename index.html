@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <title>Forside</title>
+        <meta charset="utf-8">
+    </head>
+
+    <body>
+        <header>
+            <h1 id="overskrift">Verdens tre høyeste skyskrapere</h1>
+
+            <nav>
+                <button><a href="øvePrøve1.html">Hovedside</a></button>
+                <button><a href="burj.html">Burj Khalifa</a></button>
+                <button><a href="shanghai.html">Shanghai Tower</a></button>
+                <button><a href="makkah.html">Makkah Royal Clock Tower</a></button>
+               
+            </nav>
+        </header>
+
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Skyskraper</th>
+                        <th>Høyde</th>
+                        <th>By</th>
+                        <th>Land</th>
+                        <th>Byggeår</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Burj Khalifa</td>
+                        <td>828 m</td>
+                        <td>Dubai</td>
+                        <td>De forente arabiske emirater</td>
+                        <td>2009</td>
+                    </tr>
+                    <tr>
+                        <td>Shanghai Tower</td>
+                        <td>828 m</td>
+                        <td>Dubai</td>
+                        <td>De forente arabiske emirater</td>
+                        <td>2009</td>
+                    </tr>
+                    <tr>
+                        <td>Makkah Royal Clock Tower</td>
+                        <td>828 m</td>
+                        <td>Dubai</td>
+                        <td>De forente arabiske emirater</td>
+                        <td>2009</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+
+        <footer>
+            <section>
+                <article id="Burj">
+                    <a href="burj.html"></a>
+                </article>
+                <article id="Shanghai"> <a href="shanghai.html"></a> </article>
+                <article id="Makkah"> <a href="makkah.html"></a> </article>
+            </section>
+            
+        </footer>
+    </body>
+
+<style>
+    body{
+        background-color: #404040;
+        justify-content: center;
+        
+    }
+    header{
+        background-color: #3f5765;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin: 1rem;
+    }
+    #overskrift{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+    }
+    main{
+        background-color: #bdd4de;
+        margin: 1rem;
+    }
+    thead{
+        background-color: #3f4259;
+    }
+    th{
+        color: white;
+        padding: 7px 14px;
+    }
+    td{
+        padding: 7px 14px;
+        text-align: center;
+    }
+    tbody>:nth-child(odd){
+        background-color: #bdd4de;
+    }
+    tbody>:nth-child(even){
+        background-color: white;
+    }
+    main{
+        padding: 0.5rem 0.5rem 0.5rem;
+        display: flex;
+        justify-content: center;
+        margin-top: 0.5rem;
+    }
+    table{
+        border: white solid 1px;
+        border-bottom: black solid 1px;
+        width: 95vw;
+    }
+    #Burj{
+        background-image: url(../../../html2/filer/burj_stor.jpg);
+
+    }
+    #Shanghai{
+        background-image: url(../../../html2/filer/Shanghai_stor.jpg);
+    }
+    #Shanghai a{
+        display: block;
+        width: 100%;
+        height: 100%;
+
+    }
+    #Makkah{
+        background-image: url(../../../html2/filer/Makkah_stor.jpg);
+    }
+
+    #Makkah a{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    section{
+        display: flex;
+        margin: 1rem;
+    }
+    article{
+        display: flex;
+        flex: 1;
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+    }
+    footer{
+        margin-top: 0.5rem;
+    }
+    nav{
+        display: flex;
+        flex: 1;
+        gap: 15px;
+        justify-content: center;
+    }
+    button{
+        padding: 16px 32px;
+        border-radius: 30px;
+        font-size: 1rem;
+    }
+    button:hover{
+        transform: scale(1.05);
+    }
+
+</style>
+
+<script>
+
+    let burjEl = document.getElementById("Burj")
+
+    burjEl.addEventListener("click",hei)
+
+    function hei(){
+        window.location.href = "burj.html"
+    }
+   
+
+</script>
